@@ -3,16 +3,16 @@
   padding: 0;
   border: 1px solid var(--border-strong);
   border-radius: 24px;
-  background: #121410;
+  background: #fff;
   color: var(--text);
-  box-shadow: 0 40px 100px -20px rgb(0 0 0 / 0.8), 0 0 80px -30px var(--lime-glow);
+  box-shadow: 0 24px 80px -20px rgb(17 37 70 / 0.25);
 }
 
 .dialog[open] { animation: open 0.4s var(--ease); }
 
 .dialog::backdrop {
-  background: rgb(0 0 0 / 0.6);
-  backdrop-filter: blur(6px);
+  background: rgb(19 35 59 / 0.35);
+  backdrop-filter: blur(3px);
 }
 
 .body {
@@ -47,7 +47,7 @@
 .details {
   border-radius: 14px;
   border: 1px solid var(--border);
-  background: rgb(0 0 0 / 0.3);
+  background: #f5f8fc;
   padding-inline: 16px;
 }
 

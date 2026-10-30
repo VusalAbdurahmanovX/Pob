@@ -32,7 +32,7 @@ export default function Header({ onLogin }) {
           ))}
         </nav>
         <div className={styles.actions}>
-          <Button variant="text" size="sm" className={styles.login} onClick={onLogin}>Log in</Button>
+          <Button variant="text" size="sm" className={styles.login} onClick={onLogin}>Demo dashboard</Button>
           <Button size="sm" href="#challenges">Get funded <ArrowRight size={15} /></Button>
           <button
             className={styles.toggle}

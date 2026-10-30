@@ -46,8 +46,8 @@ export default function HeroDashboard() {
         <svg className={styles.chart} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="none">
           <defs>
             <linearGradient id="equityFill" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stopColor="#c8f56a" stopOpacity="0.28" />
-              <stop offset="1" stopColor="#c8f56a" stopOpacity="0" />
+              <stop offset="0" stopColor="#245be7" stopOpacity="0.28" />
+              <stop offset="1" stopColor="#245be7" stopOpacity="0" />
             </linearGradient>
           </defs>
           {[0.25, 0.5, 0.75].map(y => (

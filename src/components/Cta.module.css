@@ -5,51 +5,40 @@
   display: grid;
   justify-items: center;
   gap: 20px;
-  padding: 96px 32px;
-  border-radius: 32px;
-  border: 1px solid var(--border-strong);
-  background:
-    linear-gradient(to right, rgb(255 255 255 / 0.03) 1px, transparent 1px) 0 0 / 48px 48px,
-    linear-gradient(to bottom, rgb(255 255 255 / 0.03) 1px, transparent 1px) 0 0 / 48px 48px,
-    var(--bg-raised);
+  padding: 88px 32px;
+  border-radius: 20px;
+  border: 1px solid #183a78;
+  background: #112d5c;
+  color: #fff;
   text-align: center;
   overflow: hidden;
   isolation: isolate;
 }
 
-.glow {
-  position: absolute;
-  left: 50%;
-  bottom: -60%;
-  z-index: -1;
-  width: 900px;
-  height: 500px;
-  transform: translateX(-50%);
-  background: radial-gradient(closest-side, rgb(200 245 106 / 0.22), transparent);
-  animation: glow 6s ease-in-out infinite alternate;
-}
+.glow { display: none; }
 
 .card h2 {
   max-width: 720px;
   font-size: clamp(34px, 5vw, 60px);
   font-weight: 600;
   letter-spacing: -0.045em;
-  line-height: 1.02;
+  line-height: 1.08;
   text-wrap: balance;
 }
 
-.card h2 span { color: var(--lime); }
+.card h2 span { color: #a9c6ff; }
 
 .card p {
   max-width: 440px;
   margin-bottom: 12px;
   font-size: 18px;
-  color: var(--muted);
+  color: #c3d2ec;
 }
 
-@keyframes glow { to { transform: translateX(-50%) scale(1.15); opacity: 0.7; } }
+.card a { background: #fff; color: #1949c6; border-color: #fff; }
+.card a:hover { background: #edf3ff; }
 
 @media (max-width: 600px) {
-  .card { padding: 64px 20px; border-radius: 24px; }
+  .card { padding: 64px 20px; border-radius: 16px; }
   .section { padding-bottom: 80px; }
 }

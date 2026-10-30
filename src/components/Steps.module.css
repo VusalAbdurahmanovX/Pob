@@ -1,5 +1,5 @@
 .section {
-  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgb(200 245 106 / 0.05), transparent);
+  background: #f8faff;
   border-top: 1px solid var(--border);
 }
 
@@ -17,7 +17,7 @@
   left: 16.6%;
   right: 16.6%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--border-strong) 15%, var(--lime) 50%, var(--border-strong) 85%, transparent);
+  background: #dce6f5;
 }
 
 .step {
@@ -40,7 +40,7 @@
   border: 1px solid var(--border-strong);
   color: var(--lime);
   font-size: 15px;
-  box-shadow: 0 0 0 8px var(--bg), 0 0 40px -8px var(--lime-glow);
+  box-shadow: 0 0 0 8px #f8faff;
 }
 
 .step h3 {
@@ -66,5 +66,5 @@
     height: auto;
     background: linear-gradient(180deg, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
   }
-  .step { background: var(--bg); padding-block: 8px; }
+  .step { background: #f8faff; padding-block: 8px; }
 }

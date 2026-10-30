@@ -1,7 +1,7 @@
 .strip {
   padding-block: 40px;
   border-block: 1px solid var(--border);
-  background: var(--bg-raised);
+  background: #f8faff;
 }
 
 .label {
@@ -37,7 +37,7 @@
   padding: 10px 20px 10px 10px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: #fff;
   white-space: nowrap;
   transition: border-color 0.2s, background-color 0.2s;
 }

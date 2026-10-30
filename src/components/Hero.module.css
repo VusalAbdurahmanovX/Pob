@@ -2,6 +2,7 @@
   position: relative;
   padding-block: 168px 120px;
   overflow: hidden;
+  background: linear-gradient(180deg, #f5f8ff 0%, #fff 86%);
 }
 
 .backdrop {
@@ -14,8 +15,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(to right, rgb(255 255 255 / 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgb(36 91 231 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(36 91 231 / 0.035) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 70% 60% at 60% 30%, #000 30%, transparent 75%);
 }
@@ -26,8 +27,9 @@
   right: -120px;
   width: 900px;
   height: 700px;
-  background: radial-gradient(closest-side, rgb(200 245 106 / 0.16), transparent);
-  filter: blur(20px);
+  background: #edf3ff;
+  border-radius: 50%;
+  opacity: 0.45;
 }
 
 .inner {
@@ -47,13 +49,13 @@
   padding: 5px 12px 5px 5px;
   border: 1px solid var(--border-strong);
   border-radius: 999px;
-  background: var(--surface);
+  background: #fff;
   font-size: 13px;
   color: var(--muted);
   transition: border-color 0.2s, color 0.2s;
 }
 
-.badge:hover { color: var(--text); border-color: rgb(200 245 106 / 0.4); }
+.badge:hover { color: var(--text); border-color: #b5cafc; }
 
 .badgeTag {
   padding: 2px 9px;
@@ -68,15 +70,12 @@
   font-size: clamp(44px, 6.2vw, 76px);
   font-weight: 600;
   letter-spacing: -0.05em;
-  line-height: 0.98;
+  line-height: 1.04;
   text-wrap: balance;
 }
 
 .accent {
-  background: linear-gradient(100deg, #e8ffb8, var(--lime) 40%, #8fd43a);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--lime);
 }
 
 .lead {

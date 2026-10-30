@@ -17,12 +17,12 @@
 .item {
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: #fff;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
 .item:hover { border-color: var(--border-strong); }
-.open { background: var(--surface-hover); border-color: var(--border-strong); }
+.open { background: #f5f8ff; border-color: #c8d8f8; }
 
 .item h3 { font: inherit; }
 
