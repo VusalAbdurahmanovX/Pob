@@ -1,0 +1,14 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+}
+
+.mark {
+  width: 26px;
+  height: 26px;
+  color: var(--lime);
+}

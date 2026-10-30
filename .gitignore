@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.deploy-keys/
+.env
+.env.*
+!.env.example
+*.log

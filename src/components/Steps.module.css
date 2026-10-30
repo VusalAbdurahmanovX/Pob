@@ -1,0 +1,70 @@
+.section {
+  background: radial-gradient(ellipse 60% 50% at 50% 0%, rgb(200 245 106 / 0.05), transparent);
+  border-top: 1px solid var(--border);
+}
+
+.steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.steps::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 16.6%;
+  right: 16.6%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-strong) 15%, var(--lime) 50%, var(--border-strong) 85%, transparent);
+}
+
+.step {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  text-align: center;
+  padding-inline: 12px;
+}
+
+.number {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  color: var(--lime);
+  font-size: 15px;
+  box-shadow: 0 0 0 8px var(--bg), 0 0 40px -8px var(--lime-glow);
+}
+
+.step h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.step p {
+  max-width: 300px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .steps::before {
+    top: 28px;
+    bottom: 28px;
+    left: 50%;
+    right: auto;
+    width: 1px;
+    height: auto;
+    background: linear-gradient(180deg, transparent, var(--border-strong) 10%, var(--border-strong) 90%, transparent);
+  }
+  .step { background: var(--bg); padding-block: 8px; }
+}

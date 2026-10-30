@@ -1,0 +1,49 @@
+.header {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 64px;
+  max-width: 640px;
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.kicker::before {
+  content: '';
+  width: 16px;
+  height: 1px;
+  background: currentColor;
+}
+
+.title {
+  font-size: clamp(34px, 4.6vw, 54px);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.title em {
+  font-style: normal;
+  color: var(--muted);
+}
+
+.lead {
+  font-size: 18px;
+  color: var(--muted);
+  text-wrap: pretty;
+}
